@@ -15,6 +15,35 @@
 			width:	230px;
 			height: 100px;
 		}
+		
+		div#SliptWindow1{
+			display:table-cell;
+			border-width:thin;
+			border-style:solid;
+			border-color:#FFFFFF;
+			width:200px;
+			high: 300px;
+			padding:15px;
+		}
+		div#SliptWindow{
+			display:table-cell;
+			border-width:thin;
+			border-style:solid;
+			border-color:#FFFFFF;
+			width:200px;
+			high: 300px;
+			padding:15px;
+		}
+		div#SliptWindow2{
+			display:table-cell;
+			border-width:thin;
+			border-style:solid;
+			border-color:#FFFFFF;
+			width:200px;
+			high: 300px;
+			padding:15px;
+		}
+		
 	</style>
 	
 	<link rel="icon" href="picture/Head_Title.png">
@@ -38,10 +67,10 @@
 			</div> 
 		</font> 
 	</strong>
-
 </head>
 
 <body>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br>
     <script type="text/javascript" src="./script/fireworks.js"></script>
 	<script type="text/javascript">
 		//this绑定的属性可以在整个构造函数内部都可以使用，而变量只能在函数内部使用。
@@ -105,6 +134,12 @@
 			new Fireworks(ev.clientX,ev.clientY).ceratefirework();
 		}
 	</script>
+
+	<p>
+		<div id="SliptWindow1" style="float:left;"> aaa1</div>
+		<div id="SliptWindow2" style="float:right;"> aaa2</div>
+	</p>
+	
 
 </body>
 </html>
