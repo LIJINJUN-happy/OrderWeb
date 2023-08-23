@@ -72,7 +72,6 @@
 					this.fireworkboom(this.fragment);//将当前创建的碎片传过去，方便运动和删除
 				}
 			}
-
 			//4.碎片运动
 			this.fireworkboom=function(obj){//obj:创建的碎片
 
@@ -95,14 +94,12 @@
 				},20);
 				
 			}
-
 			//随机方法
 			this.ranNum=function (min,max){
 				return Math.round(Math.random()*(max-min))+min;
 			};
 		}
-
-
+		
 		document.onclick=function(ev){
 			var ev=ev||window.event;
 			new Fireworks(ev.clientX,ev.clientY).ceratefirework();
