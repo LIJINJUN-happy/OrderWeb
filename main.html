@@ -5,14 +5,18 @@
 <title>Code Builder</title>
 	<style>
 		body{
-			background-image:url("picture/background.jpg");
-			background-size:cover;
-			background-position:center;
+			background-image: url("picture/background.jpg");
+			background-size: cover;
+			background-position: center;
 			overflow: hidden;
+			height: 60px;
+			overflow-x: hidden;
+			overflow-y: auto;
+			position: relative;
 		}
 		
 		audio{
-			width:	230px;
+			width: 230px;
 			height: 100px;
 		}
 		
@@ -40,6 +44,18 @@
 			align-items: center;
 		}
 		
+		.coverInfo {
+			overflow-x: scroll; 
+		}
+		.coverInfo ul {
+			list-style: none;
+			display: -webkit-box;
+			-webkit-overflow-scrolling: touch;
+			-ms-overflow-style: none;
+			overflow: -moz-scrollbars-none;
+		 }
+
+		
 	</style>
 	
 	<link rel="icon" href="picture/Head_Title.png">
@@ -65,7 +81,7 @@
 	</strong>
 </head>
 
-<body>
+<body scroll="auto">
 	<br><br><br><br><br><br><br><br><br><br><br>
     <script type="text/javascript" src="./script/fireworks.js"></script>
 	<script type="text/javascript">
@@ -132,8 +148,25 @@
 	</script>
 
 	<div class="SliptWindowBox"> 
-		<div class="SliptWindow" style="float:left;"> aaa1</div>
-		<div class="SliptWindow" style="float:right;"> aaa2</div>
+		<div class="SliptWindow" style="float:left;"> 
+			<div class="coverInfo">
+				<ul>
+					<li class="itemInCovers"> <a> <img src="picture/titleTips.png"> </a> </li>
+					<li class="itemInCovers"> <a> <img src="picture/titleTips.png"> </a> </li>
+					<li class="itemInCovers"> <a> <img src="picture/titleTips.png"> </a> </li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="SliptWindow" style="float:right;">
+			<div class="coverInfo">
+				<ul>
+					<li class="itemInCovers"> <a> <img src="picture/titleTips.png"> </a> </li>
+					<li class="itemInCovers"> <a> <img src="picture/titleTips.png"> </a> </li>
+					<li class="itemInCovers"> <a> <img src="picture/titleTips.png"> </a> </li>
+				</ul>
+			</div>
+		</div>
 	</div>
 	
 
