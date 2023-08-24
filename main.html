@@ -16,32 +16,28 @@
 			height: 100px;
 		}
 		
-		div#SliptWindow1{
-			display:table-cell;
-			border-width:thin;
-			border-style:solid;
-			border-color:#FFFFFF;
-			width:200px;
-			high: 300px;
-			padding:15px;
+		div.SliptWindow{
+			display: table-cell;
+			border-width: thin;
+			border-style: solid;
+			border-color: #FFFFFF;
+			width: 500px;
+			height: 450px;
+			margin: 0;
+			padding: 0;
 		}
-		div#SliptWindow{
-			display:table-cell;
-			border-width:thin;
-			border-style:solid;
-			border-color:#FFFFFF;
-			width:200px;
-			high: 300px;
-			padding:15px;
-		}
-		div#SliptWindow2{
-			display:table-cell;
-			border-width:thin;
-			border-style:solid;
-			border-color:#FFFFFF;
-			width:200px;
-			high: 300px;
-			padding:15px;
+		
+		div.SliptWindowBox{
+			border-width: thin;
+			border-style: hidden;
+			border-color: #FFFFFF;
+			width: 1000px;
+			height: 450px;
+			margin: auto;
+			padding: 0;
+			display: flex;
+			justily-content: center;
+			align-items: center;
 		}
 		
 	</style>
@@ -58,7 +54,7 @@
 					<li> <a target="_black" href="https://www.baidu.com/" style="color:#FFFFFF"> Order </a> </li>
 					<li> <a href="https://www.baidu.com/" style="color:#FFFFFF"> Message </a> </li>
 				</ul>
-				<audio src="audio/summer.mp3" controls></audio>
+				<!--audio src="audio/summer.mp3" controls></audio-->
 			</div> 
 
 			<div style="float:right;"> 
@@ -70,7 +66,7 @@
 </head>
 
 <body>
-	<br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br>
     <script type="text/javascript" src="./script/fireworks.js"></script>
 	<script type="text/javascript">
 		//this绑定的属性可以在整个构造函数内部都可以使用，而变量只能在函数内部使用。
@@ -135,10 +131,10 @@
 		}
 	</script>
 
-	<p>
-		<div id="SliptWindow1" style="float:left;"> aaa1</div>
-		<div id="SliptWindow2" style="float:right;"> aaa2</div>
-	</p>
+	<div class="SliptWindowBox"> 
+		<div class="SliptWindow" style="float:left;"> aaa1</div>
+		<div class="SliptWindow" style="float:right;"> aaa2</div>
+	</div>
 	
 
 </body>
