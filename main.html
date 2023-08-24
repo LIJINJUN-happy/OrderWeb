@@ -48,32 +48,35 @@
 		.coverInfo {
 			overflow-x: scroll; 
 			overflow-y: hidden;			
-			width: 500px;
-			height: 450px;
+			width: 100%;
+			height: 100%;
 		}
 		.coverInfo ul {
 			list-style: none;
-			display: -webkit-box;
+			display: block;
 			-webkit-overflow-scrolling: touch;
 			-ms-overflow-style: none;
-			overflow: -moz-scrollbars-none;
-			width: 500px;
-			height: 450px;
+			overflow: -webkit-scrollbar-button;
+			width: 100%;
+			height: 100%;
 			background-color: red;
+			padding: 0;
+			background-size: cover;
+			background-position: center;
 		 }
 
 		.nivoSlider {   
 			position: relative;
-			width: 780px;
-			height: 450px;
+			width: 100%;
+			height: 100%;
 			overflow: hidden;
 			margin: 0 auto;
 			background-size: cover;
 		}
 
 		.nivoSlider .slide{
-			width: 780px;
-			height: 450px;
+			width: 100%;
+			height: 100%;
 			position: absolute;
 			background-size: cover;
 			background-color: red;
@@ -177,18 +180,18 @@
     onload = function () {
         var arr = document.getElementsByClassName("slide");
         for (var i = 0; i < arr.length; i++) {
-            arr[i].style.left = i * 780 + "px";
+            arr[i].style.left = i * 500 + "px";
         }
     }
 
     function LeftMove() {
-        var arr = document.getElementsByClassName("slide");//获取三个子div
+        var arr = document.getElementsByClassName("slide");//获取个子div
         console.log('进来了');
         for (var i = 0; i < arr.length; i++) {
             var left = parseFloat(arr[i].style.left);
             left -= 2;     //让图片左移2个px
             console.log("left减后：%s", left);
-            var width = 780;//图片的宽度
+            var width = 500;//图片的宽度
             if (left <= -width) {
                 left = (arr.length - 1) * width;//当图片完全走出显示框，拼接到末尾，因为拼接起来总长度就是(arr.length) * width 但还有一张在显示，所以就减一
                 clearInterval(moveId); //然后停止循环
