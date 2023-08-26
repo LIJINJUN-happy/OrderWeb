@@ -42,6 +42,7 @@
 			display: flex;
 			justily-content: center;
 			align-items: center;
+			padding-top: 15px;
 		}
 		
 		div.TopWindowBox {
@@ -98,6 +99,20 @@
 			max-width:100%;
 			max-height:100%;
 		}
+		
+		.headA{
+			color: #DFDFDF;
+			border-radius: 200%;
+			overflow: hidden;
+			border: 2px solid #6827D0;
+			padding-top: 2%;
+		}
+		.headA img{
+			width: 4%;
+			height: 4%;
+			object-fit: cover;
+		}
+		
 	</style>
 	
 	<link rel="icon" href="picture/Head_Title.png">
@@ -226,38 +241,41 @@
 </script>
 	
 	<strong> 
-	<font size="+1" color="#ffffff" face=""> 
-	<div class="TopWindowBox">
-		<div style="float:left; width: 70%">
-			<div style="padding-top: 15px;">  
-				&nbsp;&nbsp;&nbsp;Code Builder &reg;
-			</div>
-			<ul>
-				<li> <a target="_black" href="https://www.baidu.com/" style="color:#FFFFFF"> Chat </a> </li>
-				<li> <a target="_black" href="https://www.baidu.com/" style="color:#FFFFFF"> Order </a> </li>
-				<li> <a href="https://www.baidu.com/" style="color:#FFFFFF"> Message </a> </li>
-			</ul>
-		</div>
+		<font size="+1" color="#ffffff" face=""> 
+			<div class="TopWindowBox">
+				<div style="float:left; width: 70%">
+					
+					<div style="padding-top: 15px;">  
+						&nbsp;&nbsp;&nbsp;Code Builder &reg;
+					</div>
+					
+					<ul>
+						<li> <a target="_black" href="https://www.baidu.com/" style="color:#FFFFFF" title="点击打开聊天页面"> Chat </a> </li>
+						<li> <a target="_black" href="https://www.baidu.com/" style="color:#FFFFFF" title="点击打开下单页面"> Order </a> </li>
+						<li> <a href="https://www.baidu.com/" style="color:#FFFFFF" title="点击查看详细信息"> Message </a> </li>
+					</ul>
+					
+				</div>
 		
-		<div style="float: right; height: 70px; width: 100%; height:90%;"> 
-			<div style="text-align: right;">
-				<a href="https://www.baidu.com/" style="color:#FFFFFF;">Sign In</a>&nbsp;&nbsp;&nbsp;
-				<a href="https://www.baidu.com/" style="color:#FFFFFF;">Login</a>&nbsp;&nbsp;
+				<div style="float: right; height: 70px; width: 100%; height:90%;"> 
+					<div style="text-align: right;">
+						
+						<a href="https://www.baidu.com/" title="我的信息" class="headA"> 
+							<img alt="" src="picture/Head_Title.png"> 
+						</a>&nbsp;&nbsp;&nbsp;
+
+						<a href="https://www.baidu.com/" style="color:#FFFFFF;" title="登录">Login</a>&nbsp;&nbsp;&nbsp;
+						<a href="https://www.baidu.com/" style="color:#FFFFFF;" title="注册">Sign In</a>&nbsp;&nbsp;&nbsp;
+						<a href="https://www.baidu.com/" style="color:#FFFFFF;" title="退出登录">Logout</a>&nbsp;&nbsp;
+					</div>
+				</div> 
 			</div>
-		</div> 
-	</div>
-	</font> 
+		</font> 
 	</strong>
 	
 	<div class="SliptWindowBox"> 
 		<div class="SliptWindow" style="float:left;"> 
 			<div class="nivoSlider"  οnmοuseοut="start()" οnmοuseοver="onblur()">
-				<div class="slide">
-					<img src="picture/background.png" class="flshImg" alt="">
-				</div>
-				<div class="slide">
-					<img src="picture/background.png" class="flshImg" alt="">
-				</div>
 				<div class="slide">
 					<img src="picture/background.png" class="flshImg" alt="">
 				</div>
@@ -270,7 +288,6 @@
 		<div class="SliptWindow" style="float:right;">
 			<div class="coverInfo">
 				<ul>
-					<li class="itemInCovers"> <a> <img src="picture/background.png" class="flshImg" alt=""> </a> </li>
 					<li class="itemInCovers"> <a> <img src="picture/background.png" class="flshImg" alt=""> </a> </li>
 					<li class="itemInCovers"> <a> <img src="picture/background.png" class="flshImg" alt=""> </a> </li>
 				</ul>
