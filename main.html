@@ -5,18 +5,14 @@
 <title>Code Builder</title>
 	<style>
 		body{
-			background-image: url("picture/background.png");
-			background-size: cover;
-			background-position: center;
 			overflow: hidden;
 			overflow-x: hidden;
 			overflow-y: auto;
 			position: relative;
-		}
-		
-		audio{
-			width: 230px;
-			height: 100px;
+			background: url(picture/background.png) no-repeat;
+			background-size: 100% 100%;
+			background-attachment: fixed;
+
 		}
 		
 		.SliptWindow{
@@ -62,7 +58,7 @@
 			border-style: hidden;
 			border-color: #FFFFFF;
 			width: 99%;
-			height: 95px;
+			height: 100px;
 			margin: auto;
 			padding-bottom: 0px;
 			display: flex;
@@ -72,13 +68,20 @@
 		
 		.EndWindowBox div{	
 			width: 33%;
-			height: 95%;
+			height: 100%;
 			margin: auto;
 			padding-bottom: 0px;
 			display: flex;
 			border-width: thin;
 			border-style: hidden;
 			border-color: #FFFFFF;
+		}
+		
+		.EndWindowBox div audio{
+			width: 100%;
+			padding-bottom: 0px;
+			margin-bottom: 0px;
+			height: 100%;
 		}
 		
 		.coverInfo {
@@ -322,7 +325,11 @@
 	<div class="EndWindowBox">
 		<!--hr color="#F7F7F7;" width="100%;"-->
 		<div>
-			
+			<audio class="myAudio" controls src="audio/summer.mp3"> 
+				<a href="audio/summer.mp3"> 
+					Listen To Music 
+				</a> 
+			</audio>
 		</div>
 		<div>
 			
